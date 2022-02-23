@@ -2,7 +2,7 @@ const APP_URL = self.location.origin + "/file";
 const encoder = new TextEncoder();
 const decoder = new TextDecoder();
 const sigCodes = {
-  v1: "Encrypted",
+  v1: "Encrypted Files",
   v2_symmetric: "zDKO6XYXioc",
   v2_asymmetric: "hTWKbfoikeg",
 };
