@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-html-link-for-pages */
 import { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Alert from "@material-ui/lab/Alert";
@@ -15,7 +14,6 @@ import GetAppIcon from "@material-ui/icons/GetApp";
 import { generateAsymmetricKeys } from "../utils/generateAsymmetricKeys";
 import Visibility from "@material-ui/icons/Visibility";
 import VisibilityOff from "@material-ui/icons/VisibilityOff";
-import Hidden from "@material-ui/core/Hidden";
 import { getTranslations as t } from "../../locales";
 import QuickResponseCode from "./QuickResponseCode";
 
@@ -119,14 +117,6 @@ const KeysGeneration = (props) => {
           <Typography variant="caption" className={classes.caption}>
             {t("key_pair_question")}
           </Typography>
-
-          <Hidden xsDown>
-            <a href="/about/#why-need-private-key" target="_blank">
-              <Typography variant="caption" className={classes.keyCaption}>
-                {t("why_need_private_key")}
-              </Typography>
-            </a>
-          </Hidden>
         </div>
       )}
       <div className={classes.root}>
@@ -164,7 +154,6 @@ const KeysGeneration = (props) => {
                     readOnly: true,
                     endAdornment: PublicKey && (
                       <>
-                        <QuickResponseCode publicKey={PublicKey} />
                         <Tooltip
                           title={t("download_public_key")}
                           placement="bottom"

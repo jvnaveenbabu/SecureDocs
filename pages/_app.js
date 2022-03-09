@@ -3,7 +3,7 @@ import { getTranslations as t } from "../locales";
 import "../public/assets/styles/style.css";
 import { checkTheme } from "../src/config/Theme";
 
-//check wether the user prefers/chose dark theme
+//check wether the dark theme
 checkTheme();
 
 function MyApp({ Component, pageProps }) {

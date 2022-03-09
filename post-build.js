@@ -1,7 +1,4 @@
-const {
-  writeFile,
-  readFile,
-} = require("fs").promises;
+const { writeFile, readFile } = require("fs").promises;
 const { join } = require("path");
 
 const main = async () => {

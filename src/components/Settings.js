@@ -8,7 +8,6 @@ import DialogTitle from "@material-ui/core/DialogTitle";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import SettingsIcon from "@material-ui/icons/Settings";
-import Language from "../config/Language";
 import { DarkMode } from "../config/Theme";
 import { getTranslations as t } from "../../locales";
 
@@ -58,10 +57,10 @@ const Settings = () => {
         <DialogTitle id="alert-dialog-title">{t("settings")}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-            {t("change_language")} :
+            {/* {t("change_language")} : */}
           </DialogContentText>
 
-          <Language />
+          {/* <Language /> */}
 
           <DialogContentText
             id="alert-dialog-description"

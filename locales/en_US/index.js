@@ -30,12 +30,6 @@ const en_US = {
   close: "Close",
   reset: "Reset",
   guide: "Guide",
-  // multiple_tabs_alert: "Multiple tabs alert",
-  // multiple_tabs_alert_notice_one:
-  //   "Looks like that Hat.sh is already open in another window/tab.",
-  // multiple_tabs_alert_notice_two:
-  //   "Please avoid encrypting/decrypting files in different tabs at the same time.",
-  // understand: "I UNDERSTAND",
 
   // Common
   file: "file",
@@ -194,12 +188,6 @@ const en_US = {
   why_need_private_key: "",
   private_key_notice:
     "Never share your private key to anyone! Only public keys should be exchanged.",
-  generate_qr_code: "Generate QR code",
-  qr_code_note_one:
-    "This QR code contains your public key. After scanning, the device will redirect to the app and autofills the public key.",
-  qr_code_note_two:
-    "You can share this QR code or link with others, instead of them having to manually enter your public key when encrypting files.",
-  qr_code_note_three: "This QR code was generated offline.",
 };
 
 export default en_US;

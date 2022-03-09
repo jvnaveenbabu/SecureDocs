@@ -3,7 +3,6 @@
 self.addEventListener("install", (event) =>
   event.waitUntil(self.skipWaiting())
 );
-
 self.addEventListener("activate", (event) =>
   event.waitUntil(self.clients.claim())
 );
@@ -42,7 +41,6 @@ const _sodium = require("libsodium-wrappers");
   await _sodium.ready;
   const sodium = _sodium;
 
-  // File Upload Process
   addEventListener("message", (e) => {
     switch (e.data.cmd) {
       case "prepareFileNameEnc":
@@ -118,6 +116,7 @@ const _sodium = require("libsodium-wrappers");
         break;
 
       case "pingSW":
+        // console.log("SW running");
         break;
     }
   });
@@ -132,7 +131,6 @@ const _sodium = require("libsodium-wrappers");
     client.postMessage({ reply: "filePreparedDec" });
   };
 
-  // For Encryption Process
   const encKeyPair = (csk, spk, mode, client) => {
     try {
       if (csk === spk) {
@@ -313,7 +311,6 @@ const _sodium = require("libsodium-wrappers");
     }
   };
 
-  // For Decryption Process
   const requestDecKeyPair = (ssk, cpk, header, decFileBuff, mode, client) => {
     try {
       if (ssk === cpk) {

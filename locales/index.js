@@ -1,5 +1,5 @@
 import locales from "./locales";
-import en_US from "./en_US"; // default locale
+import en_US from "./en_US";
 
 const checkLocale = () => {
   if (typeof window !== "undefined") {
